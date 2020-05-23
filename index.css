@@ -16,6 +16,7 @@ header {
     font-weight: 300;
     padding-left: 20px;
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
       
 }
 .main, 
@@ -36,7 +37,7 @@ header {
     margin: 0;
 }
 
-h1 {
+.title {
     text-align: center;
     padding-top: 2%;
     margin-top: 0;
@@ -124,7 +125,7 @@ footer {
     align-content: flex-start;
     text-align: center;
     margin: 0;
-    
+        
 }
 .confirmed {
     margin: 0;
@@ -141,4 +142,8 @@ footer {
     color: firebrick;
     font-size: 50px;
 }
-
+.message {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+    text-decoration: underline;
+}
