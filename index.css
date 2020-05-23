@@ -1,7 +1,9 @@
 header {
-    background-color: darkgray;
     justify-self: center;
+    background-image: url(virus.jpg);
+    background-color: darkgrey;    
 }
+
 .navigation {
     list-style-type: none;
     display: flex;
@@ -22,6 +24,7 @@ header {
     align-content: space-between;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-left: 2px solid black;
    
 }
 .policy {
