@@ -10,7 +10,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     text-decoration: none;
-    align-content: space-between;
+    align-content: space-around;
     margin: 50px;
     font-size: 20px;
     font-weight: 300;
@@ -22,14 +22,18 @@ header {
 .stats {
     display: flex;
     align-content: space-between;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    border-left: 2px solid black;
+    margin: 0;
+    
    
 }
 .policy {
     order: -1;
-    flex-grow: 2;
+    flex-grow: 1.2;
+    align-items: center;
+    border: black solid 5px;
+    margin: 0;
 }
 
 h1 {
@@ -74,6 +78,7 @@ footer {
     background-color: darkgrey;
     text-align: right;
     padding: 0.25%;
+    margin: 0;
 }
 
 .copyright{
@@ -96,3 +101,38 @@ footer {
     flex-shrink: 0;
 }
 
+/*main content formating*/
+.reported {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
+
+.stats {
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    align-items: space-around;
+    padding-bottom: 15%;
+    align-content: center;
+    background-color: black;
+
+}
+.main {
+    align-content: flex-start;
+    text-align: center;
+    margin: 0;
+    
+}
+.confirmed {
+    margin: 0;
+    align-items: center;
+    padding-top: 10%;
+}
+.sidebar {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
