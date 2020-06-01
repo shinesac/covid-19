@@ -5,13 +5,13 @@ header {
     background-color: darkgrey;  
 }
 
-.navigation {
+#navigation {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-decoration: none;
-    align-content: space-around;
+    align-content: space-around;#
     margin: 50px;
     font-size: 20px;
     font-weight: 300;
@@ -78,6 +78,7 @@ nav li {
 
 body {
     background-color: honeydew;
+    height: 100vh;
 }
 
 footer {
@@ -167,4 +168,7 @@ footer {
     float: left;
     margin-right: 2%;
     margin-bottom: 10px;
+}
+.requirements{
+    display: inline-block;
 }
