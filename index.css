@@ -68,7 +68,7 @@ header {
     float: right;
   }
 
- .title {
+ #title {
     text-align: center;
     padding-top: 2%;
     margin-top: 0;
