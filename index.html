@@ -3,7 +3,9 @@
     <head>
         <title> COVID-19 Employee Resource Portal</title>
         <link href= "normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href= "index.css" rel="stylesheet">
+        <script src= "index.js"> </script>
     </head>
     
     <body>
@@ -16,6 +18,21 @@
             <li> <a href>Confirm Absence </a></li>
             <li> <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a></li>
           </ul>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="#report">Report Illness</a><br>
+            <a href="#absence">Confirm Absense</a><br>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines</a><br>
+            <a href="#suggestions">Suggestion Form</a>
+          </div> 
+
+
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+          
         </nav>
       </header>
     
@@ -43,7 +60,7 @@
           <h2 class="notes">Requirements</h2>
           <ul id="rules">
             <li>Report all COVI9-19 suspected illness and absenses through this portal.</li><br>
-            <li><i>Supervisors:</i> Confirm absenses through this portal.</li>   <br>
+            <li><i>Supervisors:</i> Confirm absenses through this portal.</li><br>
             <li> All employees must maintain 6 feet apart and wear face masks. </li>
           </ul>
         </section>  
@@ -63,7 +80,7 @@
     </div>
   </main>
 
-  <aside class="form1">
+  <aside class="form1" id="suggestions">
     <form action="index.html" method="post">
       <h2 class="suggestionform">COVID-19 Concerns & Suggestions</h2>
       <label>Location:</label>

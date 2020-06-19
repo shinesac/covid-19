@@ -336,3 +336,49 @@ h2 {
   
   }
 /*end form*/  
+
+/*hamburger menu*/
+/* Style the hamburger menu */
+nav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+nav a.icon:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Hide the links inside the hamburger navigation menu  */
+nav #myLinks {
+  display: none;
+}
+/* Style hamburger navigation menu links */
+nav #mylinks {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/*media queries*/
+@media (min-width: 481px) {
+  nav a.icon {
+    display: none;
+  }
+}
+  
+@media (max-width: 481px) { 
+  nav li {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .ceo {
+    display: none;
+  }
+}
