@@ -10,99 +10,95 @@
     
     <body>
     
-      <header> 
+      <header>    
+    
+        <!-- make hamburger menu   -->
+        <nav class="menu" onclick="onClickMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </nav> 
+
         <h1 id="title"> COVID-19 Employee Resource Portal</h1>
-        <nav>
-          <ul id="navigation">  
-            <li> <a href> Report Illness </a> </li>
-            <li> <a href>Confirm Absence </a></li>
-            <li> <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a></li>
-          </ul>
-        
-          <!-- Navigation links (hidden by default) -->
-          <div id="myLinks">
-            <a href="#report">Report Illness</a><br>
-            <a href="#absence">Confirm Absense</a><br>
-            <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines</a><br>
-            <a href="#suggestions">Suggestion Form</a>
-          </div> 
-
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-           </a>
-        
+         
+        <nav id="navigation">
+            <a href> Report Illness </a>
+            <a href>Confirm Absence </a>
+            <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a>
         </nav>
       </header>
     
      <main class="main">  
-       
-      <p class="marquee"><strong>..........Live Update..........Reported: 5..........Confirmed: 3..........</strong></p>
-     <div class= "wrapper">
-      <div class="policy">
-        <section class="Welcome">
-          <img src="me.jpg" alt="picture of CEO" class="ceo">
-          <h2> Welcome Back!</h2>
-          <p>We are excited and happy to welcome everyone back.  As we start to open back up, we realize the importance of transparency and open communication during these uncertain times.  We will use this website to post relevant updates and as a central resource for matters relating to COVID-19. 
-          This website also serves to update you with live accounting of potential and confirmed COVID-19 cases within our facility. We hope that this information will help encourage and guide nescessary actions to ensure the health and safety of our employees.</p>
-        </section>
+       <section class="track">
+            <h1 id="tracker">
+                <div>Reported: 5</div>
+                <div>::Live Update::</div>
+                <div>Confirmed: 3</div>
+            </h1>
+       </section>
+       <div class="wrapper">
+         <div class="container">
+            <section class="welcome">
+                  <img src="me.jpg" alt="picture of CEO" class="ceo">
+                  <h2> Welcome Back!</h2>
+                      <p>We are excited and happy to welcome everyone back.  As we start to open back up, we realize the importance of transparency and open communication during these uncertain times.  We will use this website to post relevant updates and as a central resource for matters relating to COVID-19. 
+                      This website also serves to update you with live accounting of potential and confirmed COVID-19 cases within our facility. We hope that this information will help encourage and guide nescessary actions to ensure the health and safety of our employees.</p>
+                  </section>
 
-        <section class="suggestions">
-          <h3>Concerns & Suggestions</h3>
-            <p> Please use the form below to submit any reports of non-compliance with COVID-19 policy, concerns, or suggestions.  We welcome your input in making our workplace a safer environment.  You may also call our dedicated hotline, Mon-Fri between 8am-6pm EST, for COVID-19 related matters at 1-888-888-8888. </p>
-        </section>   
-      </div>
+            <section class="announcements"  >    
+              <article class = "requirements">
+                <img src="thumbtack.jpg" alt="thumbtack" class="thumbtack"> </img>
+                <h2 class="notes">Requirements</h2>
+                  <ul id="rules">
+                    <li>Report all COVI9-19 suspected illness and absenses through this portal.</li><br>
+                    <li><i>Supervisors:</i> Confirm absenses through this portal.</li><br>
+                    <li> All employees must maintain 6 feet apart and wear face masks. </li>
+                  </ul>
+                </article>  
+
+              <article class="sick">
+                <img src="thumbtack.jpg" alt="thumbtack" class="thumbtack"> </img>
+                <h2 class="notes">What if I Feel Sick?</h2>
+                  <ul>
+                    <li>Do not report to work.</li><br>
+                    <li> Notify supervisor of absense using "Report Illness" link above.</li><br>
+                    <li>All COVID-19 related absences will be excused and paid during this time.</li><br> 
+                    <li>See the CDC guidelines for further information on COVID-19. </li>
+                  </ul>
+                </article> 
+            </section> 
+
+            <section class="suggestions">
+              <h2 id="concerns">Concerns & Suggestions</h2>
+                <p> Please use the form on this page to submit any reports of non-compliance with COVID-19 policy, concerns, or suggestions.  We welcome your input in making our workplace a safer environment.  You may also call our dedicated hotline, Mon-Fri between 8am-6pm EST, for COVID-19 related matters at 1-888-888-8888. </p>
+            </section>   
+          </div>
       
-      <div class="sidebar">
-        <section class = "requirements">
-          <img src="thumbtack.jpg" alt="thumbtack" class="thumbtack"> </img>
-          <h2 class="notes">Requirements</h2>
-          <ul id="rules">
-            <li>Report all COVI9-19 suspected illness and absenses through this portal.</li><br>
-            <li><i>Supervisors:</i> Confirm absenses through this portal.</li><br>
-            <li> All employees must maintain 6 feet apart and wear face masks. </li>
-          </ul>
-        </section>  
+          <div class="form1" id="suggestions">
+              <form action="index.html" method="post">
+                <h2 class="suggestionform">COVID-19 Concerns & Suggestions</h2>
+                <label>Location:</label>
+                  <select id="location" name="location">
+                      <option value="louisville">Louisville, KY</option>
+                      <option value="dallas">Dallas, TX</option>
+                      <option value="miami">Miami, FL</option>
+                      <option value="nashville">Nashville, TN</option>
+                      <option value="chicago">Chicago, IL</option>
+                      <option value="general">General</option>
+                  </select>
+                <label>Comments:</label>
+                  <textarea id="comments" name="comments"> </textarea>
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </form>
+          </div>
+        </div>      
+       
+      </main>
 
-        <section class="sick">
-          <img src="thumbtack.jpg" alt="thumbtack" class="thumbtack"> </img>
-          <h2 class="notes">What if I Feel Sick?</h2>
-          <ul>
-            <li>Do not report to work.</li><br>
-            <li> Notify supervisor of absense using "Report Illness" link above.</li><br>
-            <li>All COVID-19 related absences will be excused and paid during this time.</li><br> 
-            <li>See the CDC guidelines for further information on COVID-19. </li>
-          </ul>
-        </section> 
-       </div>
-
-    </div>
-  </main>
-
-  <aside class="form1" id="suggestions">
-    <form action="index.html" method="post">
-      <h2 class="suggestionform">COVID-19 Concerns & Suggestions</h2>
-      <label>Location:</label>
-      <select id="location" name="location">
-        <option value="louisville">Louisville, KY</option>
-        <option value="dallas">Dallas, TX</option>
-        <option value="miami">Miami, FL</option>
-        <option value="nashville">Nashville, TN</option>
-        <option value="chicago">Chicago, IL</option>
-        <option value="general">General</option>
-      </select>
-      <label>Comments:</label>
-      <textarea id="comments" name="comments"> </textarea>
-      <button type="submit">Submit</button>
-
-    </form>
-  </aside> 
-    
-     
-     <footer>
-       <p class="copyright"><small>&copy;2020 </small></p>
-     </footer>
+      <footer>
+      <p class="copyright"><small>&copy;2020 </small></p>
+      </footer>
   
     </body>
     

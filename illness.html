@@ -1,0 +1,58 @@
+<!doctype html>
+  <html>
+    <head>
+        <title> Report Illness</title>
+        <link href= "normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link href= "index.css" rel="stylesheet">
+        <script src= "index.js"> </script>
+    </head>
+    
+    <body>
+    
+      <header>    
+    
+        <!-- make hamburger menu   -->
+        <nav class="menu" onclick="onClickMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </nav> 
+
+        <h1 id="title"> COVID-19 Employee Resource Portal</h1>
+         
+        <nav id="navigation">
+            <a href> Report Illness </a>
+            <a href>Confirm Absence </a>
+            <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="form2" id="illness">
+            <form action="index.html" method="post">
+              <h2 class="reportform">Report Illness</h2>
+              <label>First Name</label>
+                <textarea id="firstName" name="firstName"></textarea>
+              <label>Last Name</label>
+              <label>Person Reporting</label>
+              <label>Location:</label>
+                <select id="location" name="location">
+                    <option value="louisville">Louisville, KY</option>
+                    <option value="dallas">Dallas, TX</option>
+                    <option value="miami">Miami, FL</option>
+                    <option value="nashville">Nashville, TN</option>
+                    <option value="chicago">Chicago, IL</option>
+                    <option value="general">General</option>
+                </select>
+              <label>Comments:</label>
+                <textarea id="comments" name="comments"> </textarea>
+              <button type="submit" class="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </form>
+      </main>
+      </body>
+      <footer>
+        <p class="copyright"><small>&copy;2020 </small></p>
+      </footer>
+      </html>
