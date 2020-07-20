@@ -1,7 +1,7 @@
 <!doctype html>
   <html>
     <head>
-        <title> Report Illness</title>
+        <title> Confirm Absence</title>
         <link href= "normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <link href= "index.css" rel="stylesheet">
@@ -29,13 +29,13 @@
       </header>
 
       <main class="main2">
-        <div class="form2" id="illness">
-            <form action="index.html" method="post" class="iform">
-              <h2 class="reportform">Report Illness</h2>
+        <div class="form3" id="absence">
+            <form action="index.html" method="post" class="aform">
+              <h2 class="absenceform">COVID-19 Confirmed Absence</h2>
               <label>First Name</label>
                 <textarea id="firstName" name="firstName" required="text"></textarea>
               <label>Last Name</label>
-                <textarea id="lastName" name="lastName" required="text"></textarea>
+                <textarea id="lastName" name="lastName" required="text" ></textarea>
               <label>Location:</label>
                 <select id="location" name="location">
                     <option value="louisville">Louisville, KY</option>
@@ -45,14 +45,16 @@
                     <option value="chicago">Chicago, IL</option>
                     <option value="general">General</option>
                 </select>
-                <label>Date of First Symptom</label>
-                  <input type="date" name="input" placeholder="YYYY-MM-DD" required 
+                <label> Start Date of Absence</label>
+                  <input type="date" name="startdate" placeholder="YYYY-MM-DD" required 
                   pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
                   title="Enter a date in this format YYYY-MM-DD"/>
-                <label>Comments:</label>
-                  <textarea id="comments" name="comments"> </textarea>
-              <button type="submit" class="submit" id="isubmit" onclick="confirmSubmit()" onclick="trackReported()">Submit</button>
-              <button type="reset">Reset</button>
+                  <label> End Date of Absence</label>
+                  <input type="date" name="enddate" placeholder="YYYY-MM-DD" required 
+                  pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
+                  title="Enter a date in this format YYYY-MM-DD"/>
+                <button type="submit" class="submit" id="asubmit" onclick="confirmSubmit()">Submit</button>
+              
             </form>
       </main>
       </body>

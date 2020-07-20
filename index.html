@@ -22,18 +22,18 @@
         <h1 id="title"> COVID-19 Employee Resource Portal</h1>
          
         <nav id="navigation">
-            <a href> Report Illness </a>
-            <a href>Confirm Absence </a>
+            <a href="illness.html" target="_blank"> Report Illness </a>
+            <a href="absence.html" target="_blank">Confirm Absence </a>
             <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a>
         </nav>
       </header>
     
-     <main class="main">  
+     <main>  
        <section class="track">
             <h1 id="tracker">
-                <div>Reported: 5</div>
+                <div id= "rNumber"> </div>
                 <div>::Live Update::</div>
-                <div>Confirmed: 3</div>
+                <div id ="cNumber">Confirmed: </div>
             </h1>
        </section>
        <div class="wrapper">
@@ -75,7 +75,7 @@
           </div>
       
           <div class="form1" id="suggestions">
-              <form action="index.html" method="post">
+              <form action="index.html" method="post" class="sform">
                 <h2 class="suggestionform">COVID-19 Concerns & Suggestions</h2>
                 <label>Location:</label>
                   <select id="location" name="location">
@@ -88,7 +88,7 @@
                   </select>
                 <label>Comments:</label>
                   <textarea id="comments" name="comments"> </textarea>
-                <button type="submit" class="submit">Submit</button>
+                <button type="submit" class="submit" onclick="confirmSubmit()">Submit</button>
                 <button type="reset">Reset</button>
               </form>
           </div>

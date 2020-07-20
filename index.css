@@ -37,7 +37,6 @@ header {
 
 a:link {
   text-decoration: none;
-  color: white;
   font-weight: bold;
   padding: 20px;
 }
@@ -58,6 +57,9 @@ nav a {
   margin-right: 10px;
 }
 
+a {
+  color: white;
+}
 
 
 /* navigation link formatting end */
@@ -70,10 +72,14 @@ body {
   flex-direction: column;
 }
 
-.main {
+main {
   flex: 1;
 }
 
+.main2 {
+  display: flex;
+  justify-content: center;
+}
 footer {
   flex-shrink: 0;
   background-color: darkcyan;
@@ -157,14 +163,16 @@ h2 {
 } 
 
 
-/*comments form */
+/* form */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.form1 {
+.form1, 
+.form2,
+.form3 {
   font-family: 'Nunito', sans-serif;
   color: #384047;
   margin-left: 5%;
@@ -179,22 +187,18 @@ form {
 }
 
 .suggestionform,
-.reportform {
+.reportform,
+.absenceform {
   margin: 0 0 30px 0;
   text-align: center;
 }
 
 
 input[type="text"],
-input[type="password"],
 input[type="date"],
 input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
 input[type="tel"],
 input[type="time"],
-input[type="url"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -207,6 +211,9 @@ select {
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+#comments {
   margin-bottom: 30px;
 }
 
@@ -236,6 +243,9 @@ button {
   margin-bottom: 20px;
 }
 
+#asubmit {
+  margin-top: 20px;
+}
   
 fieldset {
   margin-bottom: 30px;
@@ -250,6 +260,7 @@ legend {
 label {
   display: block;
   margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 label.light {
@@ -271,10 +282,19 @@ label.light {
   border-radius: 100%;
 }
 
-.form2 {
+.form2,
+.form3 {
   margin-top: 5%;
-  width: 25%;
+  min-width: 25%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
   
+}
+
+.iform,
+.aform {
+  min-width: 50vw;
 }
 
 /* style hamburger menu */
@@ -336,11 +356,11 @@ transform: rotate(45deg) translate(-8px, -8px);
 
 @media screen and (min-width: 1000px) {
 
-textarea {
+#comments {
   height: 250px;
 }
 
-form {
+.sform {
   min-height: 100vh;
   margin-left: 2%;
 }

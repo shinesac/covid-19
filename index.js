@@ -6,8 +6,27 @@ function onClickMenu(){
 	document.getElementById("navigation").classList.toggle("change");
 }
 
-// create success message for submit button
 
-function submitSuccess(){
-	document.querySelector(".submit").addEventListener("click");
+// create confirmation message for submit
+
+function confirmSubmit(){
+  var userChoice = confirm("Are you sure you want to submit?");
+  if (userChoice == false) {event.preventDefault()
+  } else {
+    alert("Submission Successful!");
+  }
+  }
+
+
+// create tracking counter
+
+function trackReported(){
+  var reportedNumber = getElementById(rNumber).innerHTML ="";
+  var reportedIllness = 0;
+  var reportClick = getElementbyId("isubmit").addEventListener("click");
+  if (reportClick == true) {
+    reportedIllness += 1;
+    reportedNumber = "Reported:" + " " + reportedIllness;
+    console.log(reportedIllness);
+  }
 }
