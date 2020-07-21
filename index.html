@@ -1,7 +1,7 @@
 <!doctype html>
   <html>
     <head>
-        <title> COVID-19 Employee Resource Portal</title>
+        <title> <a href="index.html">COVID-19 Employee Resource Portal</a></title>
         <link href= "normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <link href= "index.css" rel="stylesheet">
@@ -19,24 +19,23 @@
           <div class="bar3"></div>
         </nav> 
 
-        <h1 id="title"> COVID-19 Employee Resource Portal</h1>
+        <h1 id="title"> <a href="index.html">COVID-19 Employee Resource Portal</a></h1>
          
         <nav id="navigation">
             <a href="illness.html" target="_blank"> Report Illness </a>
             <a href="absence.html" target="_blank">Confirm Absence </a>
             <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a>
         </nav>
+        <section class="track">
+          <h1 id="tracker">
+              <div id= "rNumber"> </div>
+              <div>::Live Update::</div>
+              <div id ="cNumber"> </div>
+          </h1>
       </header>
     
      <main>  
-       <section class="track">
-            <h1 id="tracker">
-                <div id= "rNumber"> </div>
-                <div>::Live Update::</div>
-                <div id ="cNumber">Confirmed: </div>
-            </h1>
-       </section>
-       <div class="wrapper">
+         <div class="wrapper">
          <div class="container">
             <section class="welcome">
                   <img src="me.jpg" alt="picture of CEO" class="ceo">
@@ -86,17 +85,18 @@
                       <option value="chicago">Chicago, IL</option>
                       <option value="general">General</option>
                   </select>
-                <label>Comments:</label>
-                  <textarea id="comments" name="comments"> </textarea>
-                <button type="submit" class="submit" onclick="confirmSubmit()">Submit</button>
+                <label><span style= color:red; style= font-weight:bold;>*</span>Comments:</label>
+                  <textarea id="comments" name="comments" class="required" required="text"></textarea>
+                <button type="submit" class="submit" id="subButton" onclick="confirmSubmit()">Submit</button>
                 <button type="reset">Reset</button>
+                <p id="reqfield">*Required Fields</p>
               </form>
           </div>
         </div>      
        
       </main>
 
-      <footer>
+      <footer> 
       <p class="copyright"><small>&copy;2020 </small></p>
       </footer>
   

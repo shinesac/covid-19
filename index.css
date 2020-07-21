@@ -40,10 +40,10 @@ a:link {
   font-weight: bold;
   padding: 20px;
 }
-a:hover {
+nav a:hover {
   color: orangered;
 }
-a:active {
+nav a:active {
   color: green;
 }
 nav a {
@@ -97,6 +97,7 @@ footer {
 
 .track {
       background-color: slategray; 
+      margin-bottom: 0;
   }
 
 #tracker {
@@ -105,6 +106,7 @@ footer {
   padding: 2%;
   border: black 2px solid;
   text-align: center;
+  margin-bottom: 0;
 }
 
 #tracker div:nth-child(2) {
@@ -295,6 +297,10 @@ label.light {
 .iform,
 .aform {
   min-width: 50vw;
+}
+
+#reqfield {
+  color: red;
 }
 
 /* style hamburger menu */

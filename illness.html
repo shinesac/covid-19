@@ -19,23 +19,29 @@
           <div class="bar3"></div>
         </nav> 
 
-        <h1 id="title"> COVID-19 Employee Resource Portal</h1>
+        <h1 id="title"> <a href="index.html">COVID-19 Employee Resource Portal</a></h1>
          
         <nav id="navigation">
             <a href="illness.html" target="_blank"> Report Illness </a>
             <a href="absence.html" target="_blank">Confirm Absence </a>
             <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a>
         </nav>
+        <section class="track">
+          <h1 id="tracker">
+              <div id= "rNumber"> </div>
+              <div>::Live Update::</div>
+              <div id ="cNumber"> </div>
+          </h1>
       </header>
 
       <main class="main2">
         <div class="form2" id="illness">
             <form action="index.html" method="post" class="iform">
               <h2 class="reportform">Report Illness</h2>
-              <label>First Name</label>
-                <textarea id="firstName" name="firstName" required="text"></textarea>
-              <label>Last Name</label>
-                <textarea id="lastName" name="lastName" required="text"></textarea>
+              <label><span style= color:red; style= font-weight:bold;>*</span>First Name</label>
+                <textarea id="firstName" name="firstName" class="required" required="text"></textarea>
+              <label><span style= color:red; style= font-weight:bold;>*</span>Last Name</label>
+                <textarea id="lastName" name="lastName" class="required" required="text"></textarea>
               <label>Location:</label>
                 <select id="location" name="location">
                     <option value="louisville">Louisville, KY</option>
@@ -45,14 +51,15 @@
                     <option value="chicago">Chicago, IL</option>
                     <option value="general">General</option>
                 </select>
-                <label>Date of First Symptom</label>
-                  <input type="date" name="input" placeholder="YYYY-MM-DD" required 
+                <label><span style= color:red; style= font-weight:bold;>*</span>Date of First Symptom</label>
+                  <input type="date" name="input" placeholder="YYYY-MM-DD" class ="required" required 
                   pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
                   title="Enter a date in this format YYYY-MM-DD"/>
                 <label>Comments:</label>
                   <textarea id="comments" name="comments"> </textarea>
-              <button type="submit" class="submit" id="isubmit" onclick="confirmSubmit()" onclick="trackReported()">Submit</button>
+              <button type="submit" class="submit" id="isubmit" onclick="confirmSubmit()" onclick="aButtonClick()">Submit</button>
               <button type="reset">Reset</button>
+              <p id="reqfield">*Required Fields</p>
             </form>
       </main>
       </body>

@@ -7,26 +7,34 @@ function onClickMenu(){
 }
 
 
-// create confirmation message for submit
+// create confirmation message for submit and prevent submission if required fields are blank
+//need to fix alert bug
 
-function confirmSubmit(){
+
+function confirmSubmit() {
   var userChoice = confirm("Are you sure you want to submit?");
-  if (userChoice == false) {event.preventDefault()
+  var reqUserInput = document.querySelector(".required").value;
+  if (userChoice == false || reqUserInput == "") {
+    event.preventDefault();
+    alert("No Data Submitted");
   } else {
     alert("Submission Successful!");
-  }
-  }
+  };
+}
 
+//create counter
 
-// create tracking counter
+var aCountButton = 0;
+var bCountButton = 0;
 
-function trackReported(){
-  var reportedNumber = getElementById(rNumber).innerHTML ="";
-  var reportedIllness = 0;
-  var reportClick = getElementbyId("isubmit").addEventListener("click");
-  if (reportClick == true) {
-    reportedIllness += 1;
-    reportedNumber = "Reported:" + " " + reportedIllness;
-    console.log(reportedIllness);
-  }
+function aButtonClick() {
+	aCountButton++;
+	document.getElementById("rNumber").innerHTML = "Reported:" + " " + aCountButton;
+	return console.log(aCountButton);
+}
+
+function bButtonCLick() {
+  bCountButton++;
+	document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + bCountButton;
+	return console.log(bCountButton);
 }
