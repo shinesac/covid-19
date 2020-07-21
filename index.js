@@ -8,7 +8,7 @@ function onClickMenu(){
 
 
 // create confirmation message for submit and prevent submission if required fields are blank
-//need to fix alert bug
+//need to fix alert bug ...submitting if not all required fields completed 
 
 
 function confirmSubmit() {
@@ -23,18 +23,31 @@ function confirmSubmit() {
 }
 
 //create counter
+// need to fix bug....counts, but does not keep counting once submission successful..need to show on main page
 
 var aCountButton = 0;
 var bCountButton = 0;
 
 function aButtonClick() {
-	aCountButton++;
+  aCountButton++;
 	document.getElementById("rNumber").innerHTML = "Reported:" + " " + aCountButton;
 	return console.log(aCountButton);
 }
 
-function bButtonCLick() {
+function bButtonClick() {
   bCountButton++;
-	document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + bCountButton;
+  document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + bCountButton;
 	return console.log(bCountButton);
+}
+
+// handle submit button submission
+
+function reportClickHandler() {
+  aButtonClick();
+  confirmSubmit();
+}
+
+function confirmClickHandler() {
+  bButtonClick();
+  confirmSubmit();
 }
