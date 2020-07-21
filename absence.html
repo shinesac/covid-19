@@ -38,11 +38,11 @@
         <div class="form3" id="absence">
             <form action="index.html" method="post" class="aform">
               <h2 class="absenceform">COVID-19 Confirmed Absence</h2>
-              <label><span style= color:red; style= font-weight:bold;>*</span>First Name</label>
-                <textarea id="firstName" name="firstName" class="required" required="text"></textarea>
-              <label><span style= color:red; style= font-weight:bold;>*</span>Last Name</label>
-                <textarea id="lastName" name="lastName" class="required" required="text" ></textarea>
-              <label>Location:</label>
+              <label for="firstName"><span style= color:red; style= font-weight:bold;>*</span>First Name</label>
+                <input type="text" id="firstName" name="firstName" class="required" required="text">
+              <label for="lastName"><span style= color:red; style= font-weight:bold;>*</span>Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="required" required="text" >
+              <label for="location">Location:</label>
                 <select id="location" name="location">
                     <option value="louisville">Louisville, KY</option>
                     <option value="dallas">Dallas, TX</option>
@@ -51,12 +51,12 @@
                     <option value="chicago">Chicago, IL</option>
                     <option value="general">General</option>
                 </select>
-                <label> <span style= color:red; style= font-weight:bold;>*</span>Start Date of Absence</label>
-                  <input type="date" name="startdate" placeholder="YYYY-MM-DD" class="required" required 
+                <label for="startdate"> <span style= color:red; style= font-weight:bold;>*</span>Start Date of Absence</label>
+                  <input type="date" name="startdate" id="startdate" placeholder="YYYY-MM-DD" class="required" required 
                   pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
                   title="Enter a date in this format YYYY-MM-DD"/>
-                  <label> <span style= color:red; style= font-weight:bold;>*</span>Estimated End Date of Absence</label>
-                  <input type="date" name="enddate" placeholder="YYYY-MM-DD" class="required" required 
+                  <label for="enddate"> <span style= color:red; style= font-weight:bold;>*</span>Estimated End Date of Absence</label>
+                  <input type="date" name="enddate" id="enddate"placeholder="YYYY-MM-DD" class="required" required 
                   pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
                   title="Enter a date in this format YYYY-MM-DD"/>
                 <button type="submit" class="submit" id="asubmit" onclick="confirmSubmit()" onclick="bButtonClick()">Submit</button>

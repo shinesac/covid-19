@@ -1,7 +1,7 @@
 <!doctype html>
   <html>
     <head>
-        <title> <a href="index.html">COVID-19 Employee Resource Portal</a></title>
+        <title>COVID-19 Employee Resource Portal</title>
         <link href= "normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <link href= "index.css" rel="stylesheet">
@@ -76,7 +76,7 @@
           <div class="form1" id="suggestions">
               <form action="index.html" method="post" class="sform">
                 <h2 class="suggestionform">COVID-19 Concerns & Suggestions</h2>
-                <label>Location:</label>
+                <label for="location">Location:</label>
                   <select id="location" name="location">
                       <option value="louisville">Louisville, KY</option>
                       <option value="dallas">Dallas, TX</option>
@@ -85,7 +85,7 @@
                       <option value="chicago">Chicago, IL</option>
                       <option value="general">General</option>
                   </select>
-                <label><span style= color:red; style= font-weight:bold;>*</span>Comments:</label>
+                <label for="comments"><span style= color:red; style= font-weight:bold;>*</span>Comments:</label>
                   <textarea id="comments" name="comments" class="required" required="text"></textarea>
                 <button type="submit" class="submit" id="subButton" onclick="confirmSubmit()">Submit</button>
                 <button type="reset">Reset</button>
