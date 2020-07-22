@@ -10,44 +10,65 @@ function onClickMenu(){
 // create confirmation message for submit and prevent submission if required fields are blank
 //need to fix alert bug ...submitting if not all required fields completed 
 
+// var reqFirstName = document.getElementById("firstName").value;
+// var reqLastName = document.getElementById("lastName").value;
+// var reqLocation = document.getElementById("location").value;
+// var reqStartDate = document.getElementById("startdate").value;
+// var reqEndDate = document.getElementById("enddate").value;
+// var reqIllnessDate = document.getElementById("illnessdate").value;
+// var reqIllnessFirstName = document.getElementById("illnessfirstName").value;
+// var reqIllnessLastName = document.getElementById("illnesslastName").value;
 
 function confirmSubmit() {
-  var userChoice = confirm("Are you sure you want to submit?");
   var reqUserInput = document.querySelector(".required").value;
-  if (userChoice == false || reqUserInput == "") {
+   if (reqUserInput == "") {
     event.preventDefault();
-    alert("No Data Submitted");
+    console.log("no data enterd");
+    return false;
   } else {
+      var userChoice = confirm("Are you sure you want to submit?");
+      if (userChoice === false) {
+      alert("No Data Submitted");
+      console.log("user pressed cancel");
+      event.preventDefault(); 
+        } else {
     alert("Submission Successful!");
+    console.log("user pressed submit");
+    return true;
+    };
   };
 }
+
 
 //create counter
 // need to fix bug....counts, but does not keep counting once submission successful..need to show on main page
 
-var aCountButton = 0;
-var bCountButton = 0;
+var reportCountButton = 0;
+var confirmCountButton = 0;
 
-function aButtonClick() {
-  aCountButton++;
-	document.getElementById("rNumber").innerHTML = "Reported:" + " " + aCountButton;
-	return console.log(aCountButton);
+function reportButtonClick() {
+  reportCountButton++;
+	document.getElementById("rNumber").innerHTML = "Reported:" + " " + reportCountButton;
+  return console.log(reportCountButton);
 }
 
-function bButtonClick() {
-  bCountButton++;
-  document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + bCountButton;
-	return console.log(bCountButton);
+function confirmButtonClick() {
+  confirmCountButton++;
+  document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + confirmCountButton;
+	return console.log(confirmCountButton);
 }
 
 // handle submit button submission
 
 function reportClickHandler() {
-  aButtonClick();
-  confirmSubmit();
+  if (confirmSubmit() === true) {
+    reportButtonClick();  
+}; 
 }
 
+
 function confirmClickHandler() {
-  bButtonClick();
-  confirmSubmit();
+  if (confirmSubmit() === true) {
+    confirmButtonClick();  
+}; 
 }
