@@ -41,22 +41,25 @@ function confirmSubmit() {
 
 
 //create counter
-// need to fix bug....counts, but does not keep counting once submission successful..need to show on main page
 
-var reportCountButton = 0;
 var confirmCountButton = 0;
+var reportCountButton = 0;
 
 function reportButtonClick() {
   reportCountButton++;
-	document.getElementById("rNumber").innerHTML = "Reported:" + " " + reportCountButton;
+  localStorage.setItem("reported", reportCountButton);
   return console.log(reportCountButton);
 }
 
+reportCountButton = localStorage.getItem("reported");
+
 function confirmButtonClick() {
   confirmCountButton++;
-  document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + confirmCountButton;
+  localStorage.setItem("confirmed", confirmCountButton);
 	return console.log(confirmCountButton);
 }
+
+confirmCountButton = localStorage.getItem("confirmed");
 
 // handle submit button submission
 

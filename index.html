@@ -28,10 +28,15 @@
         </nav>
         <section class="track">
           <h1 id="tracker">
-              <div id= "rNumber"> </div>
+              <div id= "rNumber"> 
+                <script> document.getElementById("rNumber").innerHTML="Reported:" + " " + localStorage.getItem("reported")</script>
+              </div>
               <div>::Live Update::</div>
-              <div id ="cNumber"> </div>
+              <div id ="cNumber"> 
+                <script> document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + localStorage.getItem("confirmed");</script>
+              </div>
           </h1>
+        </section>
       </header>
     
      <main>  
@@ -42,7 +47,7 @@
                   <h2> Welcome Back!</h2>
                       <p>We are excited and happy to welcome everyone back.  As we start to open back up, we realize the importance of transparency and open communication during these uncertain times.  We will use this website to post relevant updates and as a central resource for matters relating to COVID-19. 
                       This website also serves to update you with live accounting of potential and confirmed COVID-19 cases within our facility. We hope that this information will help encourage and guide nescessary actions to ensure the health and safety of our employees.</p>
-                  </section>
+            </section>
 
             <section class="announcements"  >    
               <article class = "requirements">
