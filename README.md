@@ -48,6 +48,9 @@ Features included:
 
 Instructions:
 
+- open index.html (this is the main page and has links to the other pages). 
+
+
 -Try to submit any form without filling out required field to see alert and function
 -Fill out form properly and press submit. Then press cancel on the confirmation alert box to see the "no data submitted" message and that entered values remain in the form
 -Fill out form properly and press submit.  See reported/confirmed count increase with each submission.  
