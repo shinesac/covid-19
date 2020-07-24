@@ -407,7 +407,7 @@ justify-content: space-around;
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
 #navigation {
   display: none;
 }
