@@ -55,8 +55,7 @@ nav a {
   flex: 1;
   text-align: center;
   margin-right: 10px;
-  margin-bottom: 25px;
-}
+ }
 
 a {
   color: white;
@@ -323,6 +322,7 @@ cursor: pointer;
 width: 50px;
 height: 25px;
 padding-bottom: 40px;
+margin: 2%;
 }
 
 .menu:hover {
@@ -419,4 +419,9 @@ justify-content: space-around;
   display: flex;
   flex-direction: column;
   }
+nav a {
+   margin-bottom: 50px;
+
+}
+
 }
