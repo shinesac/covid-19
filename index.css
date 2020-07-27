@@ -176,8 +176,10 @@ h2 {
 }
 
 .form1{
-  align-self: center;;
+  align-self: center;
+  margin-top: 2%;
 }
+
 form {
   max-width: 300px;
   padding: 15px 15px;
@@ -427,4 +429,37 @@ transform: rotate(45deg) translate(-8px, -8px);
   min-width: 90vw;
 }
 
+#title {
+  font-size: 4rem;
+}
+
+nav a {
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 2rem;
+
+}
+
+li {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 50px;
+  height: 10px;
+
+
+}
 }
