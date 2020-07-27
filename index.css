@@ -178,7 +178,7 @@ h2 {
   font-family: 'Nunito', sans-serif;
   color: #384047;
   margin-left: 5%;
-  align-self: center;    
+  /* align-self: center;     */
 }
 
 form {

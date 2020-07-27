@@ -24,7 +24,7 @@
         <nav id="navigation">
             <a href="illness.html"> Report Illness </a>
             <a href= "https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC Guidelines </a>
-            <a href="absence.html">Confirm Absence </a>
+            <a href="absence.html">Confirm COVID-19</a>
             
         </nav>
     
@@ -47,11 +47,15 @@
                     <option value="chicago">Chicago, IL</option>
                     <option value="general">General</option>
                 </select>
-                <label for="illnessdate"><span style= color:red; style= font-weight:bold;>*</span>Date of First Symptom</label>
-                  <input type="date" name="input" id="illnessdate" placeholder="YYYY-MM-DD" class ="required" required 
+                <label for="startdate"> <span style= color:red; style= font-weight:bold;>*</span>Start Date of Absence</label>
+                  <input type="date" name="startdate" id="startdate" placeholder="YYYY-MM-DD" class="required" required 
                   pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
                   title="Enter a date in this format YYYY-MM-DD"/>
-                <label for="comments">Comments:</label>
+                  <label for="enddate"> <span style= color:red; style= font-weight:bold;>*</span>Estimated End Date of Absence</label>
+                  <input type="date" name="enddate" id="enddate"placeholder="YYYY-MM-DD" class="required" required 
+                  pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
+                  title="Enter a date in this format YYYY-MM-DD"/>
+                  <label for="comments">Comments:</label>
                   <textarea id="comments" name="comments"> </textarea>
               <button type="submit" class="submit" id="isubmit" onclick="reportClickHandler()">Submit</button>
               <button type="reset">Reset</button>
