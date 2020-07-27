@@ -173,7 +173,6 @@ h2 {
 .form3 {
   font-family: 'Nunito', sans-serif;
   color: #384047;
-  margin-left: 5%;
 }
 
 .form1{
@@ -388,7 +387,11 @@ transform: rotate(45deg) translate(-8px, -8px);
   .menu {
     display: none;
   }
+
+  .form1 {
+    margin-left: 5%;
   }
+}
 
 @media screen and (max-width: 999px) {
   #navigation {
@@ -406,7 +409,6 @@ transform: rotate(45deg) translate(-8px, -8px);
   .iform,
   .aform {
     min-width: 90%;
-    margin-right: 5%;
   }
 
   .ceo {
@@ -417,9 +419,12 @@ transform: rotate(45deg) translate(-8px, -8px);
     flex-direction: column;
   }
   .wrapper {
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
   }
+
+.sform {
+  min-width: 90vw;
+}
 
 }
