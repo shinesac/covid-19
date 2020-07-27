@@ -178,9 +178,11 @@ h2 {
   font-family: 'Nunito', sans-serif;
   color: #384047;
   margin-left: 5%;
-  /* align-self: center;     */
 }
 
+.form1{
+  align-self: center;;
+}
 form {
   max-width: 300px;
   padding: 15px 15px;
@@ -348,37 +350,6 @@ transform: rotate(45deg) translate(-8px, -8px);
 
 /*media queries*/
 
-@media screen and (max-width: 1000px) {
-.ceo {
-  display: none;
-}
-.announcements {
-  flex-wrap: wrap;
-}
-.wrapper {
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-}
-}
-
-
-@media screen and (min-width: 1000px) {
-
-#comments {
-  height: 250px;
-}
-
-.sform {
-  min-height: 100vh;
-  margin-left: 2%;
-}
-
-.suggestionform {
-  padding-top: 20%;
-}
-}
-
 @media screen and (min-width: 1260px) {
 
 .requirements,
@@ -392,42 +363,67 @@ transform: rotate(45deg) translate(-8px, -8px);
 }
 
 @media screen and (min-width: 1000px) {
-#tracker {
+  #comments {
+    height: 250px;
+  }
+  
+  .sform {
+    min-height: 100vh;
+    margin-left: 2%;
+  }
+  
+  .suggestionform {
+    padding-top: 20%;
+  }
+
+  #tracker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
-}
-#navigation {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
-}
+  justify-content: space-around;
+  }
 
-.menu {
-  display: none;
-}
-}
+  .menu {
+    display: none;
+  }
+  }
 
 @media screen and (max-width: 999px) {
-#navigation {
-  display: none;
-}
+  #navigation {
+    display: none;
+  }
 
-#navigation.change {
-  display: flex;
-  flex-direction: column;
-}
-nav a {
-   margin-bottom: 50px;
-}
+  #navigation.change {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    margin-bottom: 50px;
+  }
 
-.iform,
-.aform {
-  min-width: 90%;
-  margin-right: 5%;
-}
+  .iform,
+  .aform {
+    min-width: 90%;
+    margin-right: 5%;
+  }
 
+  .ceo {
+    display: none;
+  }
+  .announcements {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .wrapper {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
