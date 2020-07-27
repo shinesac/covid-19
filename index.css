@@ -287,7 +287,7 @@ label.light {
 .form2,
 .form3 {
   margin-top: 5%;
-  min-width: 25%;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
@@ -418,10 +418,20 @@ justify-content: space-around;
 #navigation.change {
   display: flex;
   flex-direction: column;
-  }
+}
 nav a {
    margin-bottom: 50px;
-
 }
+
+.iform,
+.aform {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 3%;
+}
+
 
 }
