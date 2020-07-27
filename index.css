@@ -76,10 +76,6 @@ main {
   flex: 1;
 }
 
-.main2 {
-  display: flex;
-  justify-content: center;
-}
 footer {
   flex-shrink: 0;
   background-color: darkcyan;
