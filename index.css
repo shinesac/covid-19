@@ -388,7 +388,7 @@ transform: rotate(45deg) translate(-8px, -8px);
 } 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
 #tracker {
   display: flex;
   flex-direction: row;
@@ -407,7 +407,7 @@ justify-content: space-around;
 }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 999px) {
 #navigation {
   display: none;
 }

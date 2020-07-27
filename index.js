@@ -6,75 +6,35 @@ function onClickMenu(){
 	document.getElementById("navigation").classList.toggle("change");
 }
 
-// create confirmation message for submit and prevent submission if required fields are blank
 
-//function for confirming and validating suggestion form
-function suggestionSubmit() {
-  if (document.getElementById("comments").value == "") {
-    event.preventDefault();
-    console.log("no data enterd");
-    alert("Please fill out all required fields");
- } else {
-     var userChoice = confirm("Are you sure you want to submit?");
-     if (userChoice === false) {
-     alert("No Data Submitted");
-     console.log("user pressed cancel");
-     event.preventDefault(); 
- } else {
-     alert("Submission Successful!");
-     console.log("user pressed submit");
-   };
- };
-}
-
-//function for confirming and validating report form
-function reportSubmit() {
-
-	if (document.getElementById("illnessfirstName").value == "" || 
-      document.getElementById("illnesslastName").value == "" || 
-      document.getElementById("illnessdate").value == "") {
-      event.preventDefault();
-        console.log("no data entered");
-        alert("Please fill out all required fields");
-        return false;
-  } else {
-      var userChoice = confirm("Are you sure you want to submit?");
-      if (userChoice === false) {
-      alert("No Data Submitted");
-      console.log("user pressed cancel");
-      event.preventDefault(); 
-  } else {
-      alert("Submission Successful!");
-      console.log("user pressed submit");
-      return true;
-    };
-  };
-}
-
-//function for confirming and validating confirm form
+//function for confirming and validating form. Prevents submission if required fields are blank. 
 function confirmSubmit() {
-   if (document.getElementById("firstName").value == "" ||
-      document.getElementById("lastName").value == ""||
-      document.getElementById("startdate").value ==""||
-      document.getElementById("enddate").value =="") {
-        event.preventDefault();
-        console.log("no data enterd");
-        alert("Please fill out all required fields");
-        return false;
-  } else {
+  var invalidFields =[];
+  var requiredFields = document.querySelectorAll(".required");
+
+  requiredFields.forEach(field => {
+      if (field.value === '') {
+        invalidFields.push(field.name)
+      }
+    });
+
+    if (invalidFields.length > 0) {
+      alert(`Please finish the form. There are required fields left.`);
+      console.log("no data entered");
+      return false;
+    } else {
       var userChoice = confirm("Are you sure you want to submit?");
       if (userChoice === false) {
       alert("No Data Submitted");
       console.log("user pressed cancel");
       event.preventDefault(); 
-  } else {
-      alert("Submission Successful!");
-      console.log("user pressed submit");
-      return true;
+      } else {
+        alert("Submission Successful!");
+        console.log("user pressed submit");
+        return true;
+      };
     };
-  };
 }
-
 
 //create counter
 
@@ -104,12 +64,12 @@ confirmCountButton = localStorage.getItem("confirmed"); //resets value of counte
 
 //for report form
 function reportClickHandler() {
-  if (reportSubmit() === true) {
+  if (confirmSubmit() === true) {
     reportButtonClick();  
   }; 
 }
 
-//fpr confirm form
+//for confirm form
 function confirmClickHandler() {
   if (confirmSubmit() === true) {
     confirmButtonClick();  
