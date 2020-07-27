@@ -310,17 +310,21 @@ label.light {
   background-color: black;
   width: 35px;
   height: 5px;
-  margin: 6px;
+  margin: 10px;
   transition: 0.4s;
 }
+
 .menu {
 position: absolute;
 top: 0;
-left: 0;
+right: 0;
 cursor: pointer;
 width: 50px;
 height: 25px;
-padding-bottom: 40px;
+padding-bottom: 60px;
+padding-right: 60px;
+padding-top: 5px;
+padding-left: 5px;
 margin: 2%;
 }
 
@@ -330,8 +334,8 @@ background-color: ivory;
 
 /* Rotate first bar */
 .change .bar1 {
--webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-transform: rotate(-45deg) translate(-9px, 6px) ;
+-webkit-transform: rotate(-45deg) translate(-10px, 10px) ;
+transform: rotate(-45deg) translate(-10px, 10px) ;
 }
 
 /* Fade out the second bar */
@@ -341,8 +345,8 @@ opacity: 0;
 
 /* Rotate last bar */
 .change .bar3 {
--webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-transform: rotate(45deg) translate(-8px, -8px);
+-webkit-transform: rotate(45deg) translate(-10px, -10px) ;
+transform: rotate(45deg) translate(-10px, -10px);
 }
 
 /*media queries*/
@@ -454,12 +458,4 @@ h2 {
   font-size: 3rem;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  width: 50px;
-  height: 10px;
-
-
-}
 }
