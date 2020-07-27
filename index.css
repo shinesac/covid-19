@@ -55,6 +55,7 @@ nav a {
   flex: 1;
   text-align: center;
   margin-right: 10px;
+  margin-bottom: 25px;
 }
 
 a {
@@ -417,5 +418,5 @@ justify-content: space-around;
 #navigation.change {
   display: flex;
   flex-direction: column;
-}
+  }
 }
