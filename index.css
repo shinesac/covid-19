@@ -457,5 +457,8 @@ li {
 h2 {
   font-size: 3rem;
 }
-
+.thumbtack{
+  width: 50px;
+  height: 50px;
+}
 }
