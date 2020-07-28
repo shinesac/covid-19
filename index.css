@@ -315,8 +315,8 @@ cursor: pointer;
 width: 50px;
 height: 25px;
 padding-bottom: 75px;
-padding-right: 80px;
-padding-top: 10px;
+padding-right: 85px;
+padding-top: 5px;
 padding-left: 5px;
 margin: 2%;
 }
@@ -428,7 +428,8 @@ transform: rotate(45deg) translate(-15px, -15px);
 
 #title {
   font-size: 4rem;
-  margin-top: 5%;
+  margin-top: 10%;
+  margin-right: 8%;
 }
 
 nav a {
@@ -494,6 +495,5 @@ label {
 #tel {
   color: blue;
 }
-  
 
 }

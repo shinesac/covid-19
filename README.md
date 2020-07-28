@@ -3,7 +3,7 @@ covid-19 employee resource website for code louisville project
 
 
 Description: 
-This website acts as a model website for businesses to help manage their firm during the COVID-19 crisis. The website is ment to act as a "one-stop" for 
+This website acts as a model website for businesses to help manage their firm during the COVID-19 crisis. The website is meant to act as a "one-stop" for 
 company information regarding COVID-19.  Additionally, it is designed to keep transparency high and to enable dynamic communication.
 
 On the main page (index.html), a message is displayed from the CEO.  The expectations and company policy are clearly listed.
@@ -14,7 +14,8 @@ Navigation links are responsive to the user when they hover and click as the tex
 
 The website has a mobile and tablet view (see media queries) as well as a desktop view. Flexbox is used throughout the design. Float is used for the picture.
 
-On the smaller screens, the navigation links hide inside of a hamburger menu that appears. Additionally, the "ceo" picture disappears and there is a one column view. 
+On the smaller screens, the navigation links hide inside of a hamburger menu that appears. Additionally, the "ceo" picture disappears and there is a one column view. Font sizes also change
+and the telephone number turns blue. Form fields and buttons increase in size to make it easier for mobile user viewing. 
 
 The Report Illness link and Confirm Absence links take you to their respective forms. 
 
@@ -36,6 +37,8 @@ Once either of these forms are submitted and the page refreshes to the main page
 In other words, each new submission will add to the count which will display on the main page. 
 
 The forms are labled with focus to their respective fields.
+
+
 
 
 Features included:
