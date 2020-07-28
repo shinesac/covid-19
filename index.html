@@ -33,11 +33,13 @@
         <section class="track">
           <h1 id="tracker">
               <div id= "rNumber"> 
-                <script> document.getElementById("rNumber").innerHTML="Reported:" + " " + localStorage.getItem("reported")</script>
+                <script> document.getElementById("rNumber").innerHTML="Reported:" + " " + localStorage.getItem("reported");
+                if (reportCountButton === null) {document.getElementById("rNumber").innerHTML="Reported:" + " " + "0"};</script>
               </div>
               <div>::Live Update::</div>
               <div id ="cNumber"> 
-                <script> document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + localStorage.getItem("confirmed");</script>
+                <script> document.getElementById("cNumber").innerHTML = "Confirmed:" + " " + localStorage.getItem("confirmed");
+                if (confirmCountButton === null) {document.getElementById("cNumber").innerHTML="Confirmed:" + " " + "0"}</script>
               </div>
           </h1>
         </section>
