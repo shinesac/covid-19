@@ -197,9 +197,6 @@ form {
 
 input[type="text"],
 input[type="date"],
-input[type="datetime"],
-input[type="tel"],
-input[type="time"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -218,10 +215,6 @@ select {
   margin-bottom: 30px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
 
 select {
   padding: 6px;
@@ -307,10 +300,10 @@ label.light {
 .bar1,
 .bar2,
 .bar3 {
-  background-color: black;
-  width: 35px;
+  background-color: white;
+  width: 50px;
   height: 5px;
-  margin: 10px;
+  margin: 15px;
   transition: 0.4s;
 }
 
@@ -321,21 +314,21 @@ right: 0;
 cursor: pointer;
 width: 50px;
 height: 25px;
-padding-bottom: 60px;
-padding-right: 60px;
-padding-top: 5px;
+padding-bottom: 75px;
+padding-right: 80px;
+padding-top: 10px;
 padding-left: 5px;
 margin: 2%;
 }
 
 .menu:hover {
-background-color: ivory;
+background-color: black
 }
 
 /* Rotate first bar */
 .change .bar1 {
--webkit-transform: rotate(-45deg) translate(-10px, 10px) ;
-transform: rotate(-45deg) translate(-10px, 10px) ;
+-webkit-transform: rotate(-45deg) translate(-15px, 10px) ;
+transform: rotate(-45deg) translate(-15px, 10px) ;
 }
 
 /* Fade out the second bar */
@@ -345,8 +338,8 @@ opacity: 0;
 
 /* Rotate last bar */
 .change .bar3 {
--webkit-transform: rotate(45deg) translate(-10px, -10px) ;
-transform: rotate(45deg) translate(-10px, -10px);
+-webkit-transform: rotate(45deg) translate(-15px, -15px) ;
+transform: rotate(45deg) translate(-15px, -15px);
 }
 
 /*media queries*/
@@ -435,6 +428,7 @@ transform: rotate(45deg) translate(-10px, -10px);
 
 #title {
   font-size: 4rem;
+  margin-top: 5%;
 }
 
 nav a {
@@ -461,4 +455,41 @@ h2 {
   width: 50px;
   height: 50px;
 }
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+
+}
+
+#comments {
+  height: 150px;
+  margin-bottom: 50px;
+}
+
+
+select {
+  height: 50px;
+}
+
+button {
+  padding: 30px 30px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+#asubmit {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.5rem;
+}
+  
+
 }
