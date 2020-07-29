@@ -73,5 +73,7 @@ function reportClickHandler() {
 function confirmClickHandler() {
   if (confirmSubmit() === true) {
     confirmButtonClick();  
+    event.preventDefault();
+    window.location.replace("index.html");
   }; 
 }
