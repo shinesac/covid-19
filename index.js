@@ -66,6 +66,8 @@ confirmCountButton = localStorage.getItem("confirmed"); //resets value of counte
 function reportClickHandler() {
   if (confirmSubmit() === true) {
     reportButtonClick();  
+    event.preventDefault(); //prevents 405 error by stopping data posting to server
+    window.location.replace("index.html"); //redirects user to home page to view updated data
   }; 
 }
 
@@ -73,7 +75,7 @@ function reportClickHandler() {
 function confirmClickHandler() {
   if (confirmSubmit() === true) {
     confirmButtonClick();  
-    event.preventDefault();
-    window.location.replace("index.html");
+    event.preventDefault(); //prevents 405 error by stopping data posting to server
+    window.location.replace("index.html"); //redirects user to home page to view updated data
   }; 
 }
