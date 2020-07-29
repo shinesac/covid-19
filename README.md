@@ -51,6 +51,8 @@ Features included:
 
 Instructions:
 
+* you can access the page by going to https://shinesac.github.io/covid-19
+
 - open index.html (this is the main page and has links to the other pages). 
 
 
@@ -59,7 +61,7 @@ Instructions:
 -Fill out form properly and press submit.  See reported/confirmed count increase with each submission.  
 - Repeat filling out form successfully for both reported and confirmed forms to see each count increase on the main page. 
 
-- to see media query functionality, resize browser. Check in google developer tools.
+- to see media query functionality, resize browser. Check in google developer tools or go to website on mobile device.
 - toggle hamburger menu in mobile view.
 
 *if needed, you can clear your local storage by entering the console and passing localStorage.clear()*
